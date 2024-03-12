@@ -1,22 +1,26 @@
 body {
-  background: url("images/City.jpeg");
+  background: url("images/City.jpeg") fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.app {
+.app-wrapper {
   width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+.app {
   border: none;
   background-color: #e0e0ec;
   opacity: 0.8;
   height: 600px;
   border-radius: 20px;
   display: block;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 h1,
@@ -55,4 +59,16 @@ button {
 }
 
 @media (max-width: 576px) {
+  .app {
+    width: 260px;
+    margin-left: 45px;
+    position: relative;
+    top: -230px;
+    padding-top: 10px;
+    height: 350px;
+  }
+
+  body {
+    background-size: cover;
+  }
 }

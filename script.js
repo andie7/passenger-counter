@@ -21,7 +21,7 @@ increment();
 
 function save() {
   let countStrg = count + "-";
-  saveEl.textContentStrg;
+  saveEl.textContent += countStrg;
   console.log(count);
   countEl.textContent = 0;
   count = 0;
