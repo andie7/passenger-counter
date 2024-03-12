@@ -3,9 +3,11 @@
 // create variables to store the data in
 
 //camelCase
-let countEl = document.getElementById("count-el");
 
 let count = -1;
+let countEl = document.getElementById("count-el");
+let saveEl = document.getElementById("save-el");
+console.log(saveEl);
 
 function increment() {
   count += 1;
@@ -16,12 +18,10 @@ function increment() {
 increment();
 
 //Create a function save which logs out the count when its called
-let saveEl = document.getElementById("save-el");
-console.log(saveEl);
 
 function save() {
   let countStrg = count + "-";
-  saveEl.textContent += countStrg;
+  saveEl.textContentStrg;
   console.log(count);
   countEl.textContent = 0;
   count = 0;
