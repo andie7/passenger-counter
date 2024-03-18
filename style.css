@@ -59,6 +59,11 @@ button {
 }
 
 @media (max-width: 576px) {
+  .app-wrapper {
+    position: relative;
+    top: 500px;
+    left: 230px;
+  }
   .app {
     width: 260px;
     margin-left: 45px;
